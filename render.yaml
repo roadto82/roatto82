@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: roadto82
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7837133555:AAFAQLfxm2SgBuWgedZP_M5fNCd00mvLQoU
+    region: oregon
